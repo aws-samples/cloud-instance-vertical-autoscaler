@@ -10,7 +10,7 @@ This framework provides a prototyping to implement automated elastic vertical sc
 We assume that 
 * you should already install CloudWatch agent on your EC2, so that we could featch the mem_used_percent metric in CloudWatch for scaling decision making. 
 * we'll use private API gateway. You should already have a VPC endpoint for API Gateway in your VPC. 
-* we'll send EC2 vertifical scaling notification to a SNS topic. You should aleady have an SNS topic to receive notification. Please put the SNS topic ARN into the context.json. 
+* we'll send EC2 vertifical scaling notification to a SNS topic. You should aleady have an SNS topic to receive notification. Please put the SNS topic ARN into the context in the cdk.json file. 
 
 
 ## Architecture
