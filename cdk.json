@@ -1,0 +1,26 @@
+{
+  "app": "python3 app.py",
+  "watch": {
+    "include": [
+      "**"
+    ],
+    "exclude": [
+      "README.md",
+      "cdk*.json",
+      "requirements*.txt",
+      "source.bat",
+      "**/__init__.py",
+      "**/__pycache__",
+      "tests"
+    ]
+  },
+  "context": {
+    "instance_id": "i-ec20987654321",
+    "cpu_threshold_upsize": "0.9",
+    "mem_threshold_upsize": "0.9",
+    "cpu_threshold_downsize": "0.4",
+    "mem_threshold_downsize": "0.4",
+    "sns_topic_arn": "arn:aws:sns:ap-east-1:123456789012:ec2_notification_topic",
+    "resize_time_zone": "Asia/Hong_Kong"
+  }
+}
